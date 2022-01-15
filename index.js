@@ -155,30 +155,61 @@ car2.LicenseNo = 1245 ;
 
 console.log(car2)
 
+let car3 = {}
+Object.assign(car3,cars)
+car3.LicenseNo = 265 ;
+console.log(car3)
+
+let car4 = {}
+Object.assign(car4,cars)
+car4.LicenseNo = 4444 ;
+console.log(car4)
+
+let car5 = {}
+
+Object.assign(car5,cars)
+car5.LicenseNo = 5555 ;
+console.log(car5)
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 
+
+let carsForRent = [cars,car2,car3,car4,car5]
+
+console.log(carsForRent)
+
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
+carsForRent.shift()
+carsForRent.pop()
 
+console.log(carsForRent)
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
-
+console.log( typeof cars)
+console.log("What type of data is used for licensePlate property?", typeof cars.LicenseNo)
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 12
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
  Create a new variable called totalCars and assign to it the total number of cars present in the carsForSale and carsForSale arrays.
 */
+
+
+
+let carsAvailable = [];
+
+carsAvailable.push
 
 /* WRITE YOUR ANSWER HERE */
 

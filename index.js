@@ -209,8 +209,10 @@ console.log("What type of data is used for licensePlate property?", typeof cars.
 
 let carsAvailable = [];
 
-carsAvailable.push
+carsAvailable.push(cars,car2,car3,car4,car5)
 
+console.log(carsAvailable)
+console.log("---------------------------------------------")
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 13
@@ -218,6 +220,15 @@ carsAvailable.push
 */
 
 /* WRITE YOUR ANSWER HERE */
+
+
+for(let i = 0; i < carsAvailable.length ; i++){
+
+    let car = carsAvailable[i]
+    console.log(car)
+}
+
+
 
 /* WHEN YOU ARE FINISHED
  Upload the .js file on Eduflow before 5PM CET. In the next days we'll also learn how to use GIT!

@@ -576,15 +576,33 @@ console.log(me)
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
+me.skills.pop()
 
+console.log(me)
 // JS Functions
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 
+let dice = function () {
+
+    return Math.floor(Math.random()*6 + 1)
+}
+console.log(dice())
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
+
+let whoIsBigger = function (num1,num2) {
+    
+    if(num1 > num2){
+        return num1
+    }else{
+        return "Nothing valid"
+    }
+}
+
+console.log(whoIsBigger(10,10))
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.

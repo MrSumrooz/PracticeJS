@@ -609,15 +609,38 @@ console.log(whoIsBigger(10,10))
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+
+
+let splitMe = function(str){
+
+   let splitStr = str.split(",")
+return splitStr
+} 
+
+console.log(splitMe("i,love,u"))
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
 
+let deleteOne = function(str){
+
+    if (Boolean === true){
+
+        console.log(str.slice(1,0))
+    }else{
+        console.log(str.slice(0,str.length-1))
+    }
+}
+console.log(deleteOne("Sumrooz"))
+
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
+
+
+
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
